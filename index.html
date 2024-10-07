@@ -1,0 +1,127 @@
+<link rel="shortcut icon" type="image/png" href="https://i.ibb.co/smyHL8v/Untitled-design-45.png">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>😎Flesh-Eating Disease Information😎</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #121212; /* Dark Background */
+            color: #e0e0e0; /* Light Text */
+            padding: 20px;
+        }
+        h1 {
+            color: #e74c3c; /* Bright Red for Title */
+        }
+        section {
+            margin-bottom: 20px;
+            background: #1e1e1e; /* Darker section background */
+            border-radius: 5px;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #3498db; /* Bright Blue button */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2980b9; /* Darker Blue on hover */
+        }
+        ul {
+            list-style-type: none; /* Remove default bullets */
+            padding: 0;
+        }
+        .poster {
+            width: 100%; /* Full width of the container */
+            max-width: 800px; /* Maximum width to prevent overscaling */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Center the image */
+            margin: 20px auto; /* Centering with top and bottom margins */
+        }
+        .dropdown {
+            text-align: center; /* Center the dropdown section */
+            margin: 20px 0;
+        }
+        .dropdown-content {
+            display: none; /* Initially hide the dropdown content */
+            margin-top: 10px;
+        }
+        .dropdown-toggle {
+            cursor: pointer;
+            color: #e74c3c; /* Red color for the toggle link */
+            text-decoration: underline; /* Underline for effect */
+        }
+    </style>
+</head>
+<body>
+    <h1>Flesh-Eating Disease (Necrotizing Fasciitis)</h1>
+    
+    <section>
+        <h2>What is it?</h2>
+        <p>
+            Necrotizing fasciitis is a severe, rapidly progressing infection that destroys muscles, fat, and skin tissue.
+        </p>
+    </section>
+
+    <section>
+        <h2>Symptoms</h2>
+        <ul id="symptoms-list">
+            <li>Severe pain and tenderness</li>
+            <li>Red or swollen area of skin</li>
+            <li>Fever and chills</li>
+            <li>Nausea and vomiting</li>
+            <li>Skin blisters or black spots</li>
+        </ul>
+        <button onclick="toggleSymptoms()">Show/Hide Symptoms</button>
+    </section>
+
+    <section>
+        <h2>Causes</h2>
+        <p>
+            You can get flesh-eating disease when bacteria enter a wound, such as from an insect bite, a burn, or a cut.
+        </p>
+    </section>
+
+    <section>
+        <h2>Prevention</h2>
+        <p>
+            Wash your hands often. And always keep cuts, scrapes, burns, sores, and bites clean.
+        </p>
+    </section>
+
+    <img src="https://i.ibb.co/fpr5tgx/TAKE-CARE-OF-YOUR-SKIN.png" alt="Flesh-Eating Disease Awareness Poster" class="poster">
+
+    <!-- Dropdown Section for Disturbing Image -->
+    <div class="dropdown">
+        <h3>See a Disturbing Image</h3>
+        <span class="dropdown-toggle" onclick="toggleImage()">Show/Hide Image</span>
+        <div id="disturbing-image" class="dropdown-content">
+            <img src="https://study.com/cimages/videopreview/flesh_eating_bacteria_117146.jpg" alt="Disturbing Image" class="poster">
+        </div>
+    </div>
+
+    <script>
+        function toggleSymptoms() {
+            const symptomsList = document.getElementById('symptoms-list');
+            symptomsList.style.display = (symptomsList.style.display === 'none') ? 'block' : 'none';
+        }
+
+        function toggleImage() {
+            const imageDiv = document.getElementById('disturbing-image');
+            imageDiv.style.display = (imageDiv.style.display === 'none' || imageDiv.style.display === '') ? 'block' : 'none';
+        }
+
+        // Initially hide symptoms and disturbing image
+        document.getElementById('symptoms-list').style.display = 'none';
+        document.getElementById('disturbing-image').style.display = 'none';
+    </script>
+</body>
+</html>
